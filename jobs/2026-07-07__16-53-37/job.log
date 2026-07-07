@@ -1,0 +1,17 @@
+Skipping image OS validation for hb__9260bdba7620517ff547398be06d6958: docker inspect returned 1
+Collecting main service artifacts
+Failed to download artifact '/app/report.json' from service 'main' (best-effort)
+Traceback (most recent call last):
+  File "C:\Users\krist\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\trial\artifact_handler.py", line 330, in _download_artifact
+    await source_env.service_download_file(
+  File "C:\Users\krist\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker.py", line 1019, in service_download_file
+    await self.download_file(source_path, target_path)
+  File "C:\Users\krist\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker.py", line 1004, in download_file
+    await self._platform.download_file(source_path, target_path)
+  File "C:\Users\krist\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker_unix.py", line 186, in download_file
+    await self._env._run_docker_compose_command(
+  File "C:\Users\krist\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker.py", line 625, in _run_docker_compose_command
+    raise RuntimeError(
+RuntimeError: Docker compose command failed for environment log-report. Command: docker compose --project-name log-report__ehftzlo__env --project-directory C:\Users\krist\Downloads\fix-task-broken\log-report\environment -f C:\Users\krist\AppData\Local\Temp\tmpor30sqk0\log-report__ehFtZLo__env-docker-compose-resources.json -f C:\Users\krist\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker-compose-build.yaml -f C:\Users\krist\AppData\Local\Temp\tmpw_pepf3m\docker-compose-mounts.json -f C:\Users\krist\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker-compose-egress-control.yaml -f C:\Users\krist\AppData\Local\Temp\tmpqvo8d75y\docker-compose-egress-control-services.json cp main:/app/report.json jobs\2026-07-07__16-53-37\log-report__ehFtZLo\artifacts\app\report.json. Return code: 1. Stdout:  log-report__ehftzlo__env-main-1 Copying log-report__ehftzlo__env-main-1:/app/report.json to jobs\2026-07-07__16-53-37\log-report__ehFtZLo\artifacts\app\report.json
+Error response from daemon: Could not find the file /app/report.json in container 8c208c071ed3bf1f7139dd2b1a939342c174e133fabf324dbd5d8dbdc2d5c195
+. Stderr: None. 
