@@ -1,0 +1,3 @@
+Skipping image OS validation for hb__9260bdba7620517ff547398be06d6958: docker inspect returned 1
+Collecting main service artifacts
+Trial log-report__Udd2Bep failed: No reward file found at jobs\2026-07-07__16-05-14\log-report__Udd2Bep\verifier\reward.txt or jobs\2026-07-07__16-05-14\log-report__Udd2Bep\verifier\reward.json

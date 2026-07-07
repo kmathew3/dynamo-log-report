@@ -1,0 +1,71 @@
+Traceback (most recent call last):
+  File "C:\Users\krist\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\trial\trial.py", line 350, in run
+    await self._prepare()
+  File "C:\Users\krist\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\trial\trial.py", line 379, in _prepare
+    await self._setup_agent_environment()
+  File "C:\Users\krist\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\trial\trial.py", line 1097, in _setup_agent_environment
+    await self._start_agent_environment()
+  File "C:\Users\krist\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\trial\trial.py", line 1103, in _start_agent_environment
+    await asyncio.wait_for(
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\krist\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker.py", line 859, in start
+    await self._run_docker_compose_command(["build"])
+  File "C:\Users\krist\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker.py", line 625, in _run_docker_compose_command
+    raise RuntimeError(
+RuntimeError: Docker compose command failed for environment log-report. Command: docker compose --project-name log-report__qpcdvjf__env --project-directory C:\Users\krist\Downloads\fix-task-broken\log-report\environment -f C:\Users\krist\AppData\Local\Temp\tmpiukj1067\log-report__qPCDvjF__env-docker-compose-resources.json -f C:\Users\krist\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker-compose-build.yaml -f C:\Users\krist\AppData\Local\Temp\tmphcsiqfr5\docker-compose-mounts.json -f C:\Users\krist\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker-compose-egress-control.yaml -f C:\Users\krist\AppData\Local\Temp\tmprv78pj2q\docker-compose-egress-control-services.json build. Return code: 1. Stdout:  Image log-report__qpcdvjf__env-main Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 617B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 230B 0.0s done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/python:latest
+#3 DONE 0.3s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [1/6] FROM docker.io/library/python:latest@sha256:09b29c360b84742bf98eba40b214f7f6b4b53286bb2c8a8b5b1afa188a8d9c0e
+#5 resolve docker.io/library/python:latest@sha256:09b29c360b84742bf98eba40b214f7f6b4b53286bb2c8a8b5b1afa188a8d9c0e 0.0s done
+#5 DONE 0.0s
+
+#6 [internal] load build context
+#6 transferring context: 32B done
+#6 DONE 0.0s
+
+#7 [3/6] WORKDIR /app
+#7 CACHED
+
+#8 [2/6] RUN pip install --no-cache-dir pytest==8.4.1 pytest-json-ctrf==0.3.5
+#8 CACHED
+
+#9 [5/6] COPY test.sh /tests/test.sh
+#9 ERROR: failed to calculate checksum of ref 81k0nwfoiljmpaqe4d7y5o809::9vdpjhmhm8r7dd0vk6yvogw9s: "/test.sh": not found
+
+#10 [4/6] COPY access.log /app/access.log
+#10 CACHED
+------
+ > [5/6] COPY test.sh /tests/test.sh:
+------
+Dockerfile:8
+
+--------------------
+
+   6 |     
+
+   7 |     COPY access.log /app/access.log
+
+   8 | >>> COPY test.sh /tests/test.sh
+
+   9 |     RUN chmod +x /tests/test.sh
+
+--------------------
+
+failed to solve: failed to compute cache key: failed to calculate checksum of ref 81k0nwfoiljmpaqe4d7y5o809::9vdpjhmhm8r7dd0vk6yvogw9s: "/test.sh": not found
+
+. Stderr: None. 
