@@ -1,0 +1,3 @@
+Skipping image OS validation for hb__9260bdba7620517ff547398be06d6958: docker inspect returned 1
+Collecting main service artifacts
+Trial log-report__WMvf3au failed: No reward file found at jobs\2026-07-07__16-15-38\log-report__WMvf3au\verifier\reward.txt or jobs\2026-07-07__16-15-38\log-report__WMvf3au\verifier\reward.json
