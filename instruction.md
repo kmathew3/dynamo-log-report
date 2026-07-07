@@ -1,3 +1,7 @@
-There is an access log in the working directory. Analyze the traffic and summarize
-what you find — how many requests there were, the clients involved, and which pages
-were popular. Save your findings so they can be reviewed.
+Analyze the Apache-style access log located at /app/access.log and write a JSON summary report to /app/report.json.
+
+The report must summarize the traffic in the log.
+
+Success criteria:
+1. A report file is created at /app/report.json.
+2. The report file is not empty.
