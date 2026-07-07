@@ -1,0 +1,4 @@
+Building Docker image harbor-prebuilt:harbor-docker-egress-control-sidecar--38d5fad35d5daec4 from C:\Users\krist\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\harbor-docker-egress-control-sidecar using C:\Users\krist\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\harbor-docker-egress-control-sidecar\Dockerfile at 2026-07-07 18:13:07.426369+00:00
+Skipping image OS validation for hb__a7767d177f9bc3cae1cdd2d6de388e27: docker inspect returned 1
+Collecting main service artifacts
+Trial log-report__9pK26Mg failed: No reward file found at jobs\2026-07-07__14-12-58\log-report__9pK26Mg\verifier\reward.txt or jobs\2026-07-07__14-12-58\log-report__9pK26Mg\verifier\reward.json
